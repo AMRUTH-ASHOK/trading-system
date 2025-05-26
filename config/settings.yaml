@@ -1,0 +1,75 @@
+# Trading System Settings
+
+# Mode Settings
+mode: "live"                               # live | backtest
+backtest:
+  start_date: "2024-01-01"                # backtest start date (YYYY-MM-DD)
+  end_date: "2024-03-31"                  # backtest end date (YYYY-MM-DD)
+  initial_capital: 1000000                # initial capital for backtest
+  commission_rate: 0.0020                 # commission rate (0.20%)
+  slippage: 0.0005                        # slippage rate (0.05%)
+
+# Trading Parameters
+symbols: ["NSE:RELIANCE-EQ", "NSE:TCS-EQ"]  # instruments to monitor
+lookback_hours: 480                          # history for feature calc
+position_limit: 100                          # shares per symbol
+notional_cap: 100000                        # INR per day
+schedule: "cron:* * * * *"                  # run every minute
+broker: "fyers"                             # fyers | mock
+
+# Technical Analysis Parameters
+sma_fast_period: 10                         # fast moving average period
+sma_slow_period: 20                         # slow moving average period
+rsi_period: 14                              # RSI calculation period
+
+# ML Model Parameters
+ml_confidence_buy_threshold: 0.55           # threshold for ML buy signals
+ml_confidence_sell_threshold: 0.45          # threshold for ML sell signals
+default_signal_confidence: 0.6              # default confidence for rule-based signals
+
+# UI Settings
+ui:
+  # Chart Settings
+  chart_height: 600                         # height of charts in pixels
+  candlestick_colors:
+    increasing: "#26A69A"                   # green color for up moves
+    decreasing: "#EF5350"                   # red color for down moves
+  
+  # Font Settings
+  fonts:
+    size:
+      small: 1.0                           # small text (rem)
+      medium: 1.1                          # medium text (rem)
+      large: 1.2                           # large text (rem)
+      xlarge: 1.4                          # extra large text (rem)
+      xxlarge: 1.8                         # double extra large text (rem)
+      xxxlarge: 2.0                        # triple extra large text (rem)
+    weights:
+      normal: 500
+      semibold: 600
+      bold: 700
+      extrabold: 800
+  
+  # Color Scheme
+  colors:
+    primary: "#1976D2"                     # primary blue color
+    secondary: "#E64A19"                   # secondary orange color
+    success: "#26A69A"                     # success green color
+    error: "#EF5350"                       # error red color
+    warning: "#FFA726"                     # warning orange color
+    text: "#000000"                        # main text color
+    background: "#FFFFFF"                  # background color
+    muted: "#E5E5E5"                      # muted/disabled color
+    
+  # Layout Settings
+  layout:
+    sidebar_width: "20rem"                 # width of the sidebar
+    container_padding: "1.5rem"            # padding for containers
+    border_radius: "8px"                   # border radius for components
+    shadow: "0 2px 4px rgba(0,0,0,0.05)"  # shadow for components
+
+  # Log Display
+  log_display_height: 300                  # height of log display area
+
+  # Pipeline ID Display
+  pipeline_id_hash_length: 8               # length of pipeline hash to display

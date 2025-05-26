@@ -1,0 +1,19 @@
+2025-05-26 02:27:45 [INFO] __main__ - Pipeline pipeline_20250526_022745_38e6dc - Starting pipeline pipeline_20250526_022745_38e6dc
+2025-05-26 02:27:45 [INFO] __main__ - Pipeline pipeline_20250526_022745_38e6dc - Step 1: Fetching market data...
+2025-05-26 02:27:45 [DEBUG] urllib3.connectionpool - Pipeline pipeline_20250526_022745_38e6dc - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2025-05-26 02:27:45 [DEBUG] urllib3.connectionpool - Pipeline pipeline_20250526_022745_38e6dc - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3ARELIANCE-EQ&resolution=1&date_format=1&range_from=2025-04-14&range_to=2025-05-26&cont_flag=1 HTTP/1.1" 200 None
+2025-05-26 02:27:45 [DEBUG] urllib3.connectionpool - Pipeline pipeline_20250526_022745_38e6dc - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2025-05-26 02:27:45 [DEBUG] urllib3.connectionpool - Pipeline pipeline_20250526_022745_38e6dc - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3ATCS-EQ&resolution=1&date_format=1&range_from=2025-04-14&range_to=2025-05-26&cont_flag=1 HTTP/1.1" 200 None
+2025-05-26 02:27:45 [DEBUG] trading.utils.pipeline_tracker - Pipeline pipeline_20250526_022745_38e6dc - Saved raw data for 2 symbols
+2025-05-26 02:27:45 [INFO] __main__ - Pipeline pipeline_20250526_022745_38e6dc - ✓ Fetched data for 2 symbols
+2025-05-26 02:27:45 [INFO] __main__ - Pipeline pipeline_20250526_022745_38e6dc - Step 2: Computing technical features...
+2025-05-26 02:27:45 [DEBUG] trading.utils.pipeline_tracker - Pipeline pipeline_20250526_022745_38e6dc - Saved features: open, high, low, close, volume, rsi, sma_fast, sma_slow
+2025-05-26 02:27:45 [INFO] __main__ - Pipeline pipeline_20250526_022745_38e6dc - ✓ Generated 8 features
+2025-05-26 02:27:45 [INFO] __main__ - Pipeline pipeline_20250526_022745_38e6dc - Step 3: Generating trading signals...
+2025-05-26 02:27:45 [INFO] __main__ - Pipeline pipeline_20250526_022745_38e6dc - ✓ Generated 0 trading signals
+2025-05-26 02:27:45 [INFO] __main__ - Pipeline pipeline_20250526_022745_38e6dc - Step 4: Executing trades...
+2025-05-26 02:27:45 [INFO] __main__ - Pipeline pipeline_20250526_022745_38e6dc - ✓ Trade execution complete
+2025-05-26 02:27:45 [INFO] trading.utils.pipeline_tracker - Pipeline pipeline_20250526_022745_38e6dc - Pipeline pipeline_20250526_022745_38e6dc completed
+2025-05-26 02:28:00 [DEBUG] apscheduler.scheduler - Pipeline pipeline_20250526_022745_38e6dc - Looking for jobs to run
+2025-05-26 02:28:00 [INFO] apscheduler.executors.default - Pipeline pipeline_20250526_022745_38e6dc - Running job "pipeline (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-05-26 02:28:00 IST)" (scheduled at 2025-05-26 02:28:00+05:30)
+2025-05-26 02:28:00 [DEBUG] apscheduler.scheduler - Pipeline pipeline_20250526_022745_38e6dc - Next wakeup is due at 2025-05-26 02:29:00+05:30 (in 59.993752 seconds)

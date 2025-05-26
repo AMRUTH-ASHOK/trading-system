@@ -1,0 +1,19 @@
+# Python virtual environment
+env/
+
+# Sensitive information
+config/secrets.yaml
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# SQLite database files
+*.sqlite
+
+# Environment variables
+.env 

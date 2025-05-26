@@ -1,0 +1,24 @@
+2025-05-26 02:28:00 [INFO] __main__ - Pipeline pipeline_20250526_022800_c5eecd - Starting pipeline pipeline_20250526_022800_c5eecd
+2025-05-26 02:28:00 [INFO] __main__ - Pipeline pipeline_20250526_022800_c5eecd - Step 1: Fetching market data...
+2025-05-26 02:28:00 [DEBUG] urllib3.connectionpool - Pipeline pipeline_20250526_022800_c5eecd - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2025-05-26 02:28:00 [DEBUG] urllib3.connectionpool - Pipeline pipeline_20250526_022800_c5eecd - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3ARELIANCE-EQ&resolution=1&date_format=1&range_from=2025-04-14&range_to=2025-05-26&cont_flag=1 HTTP/1.1" 200 None
+2025-05-26 02:28:00 [DEBUG] FyersAPIRequest - Pipeline pipeline_20250526_022800_c5eecd - {'Status Code': 200, 'API': '/history'}
+2025-05-26 02:28:00 [DEBUG] urllib3.connectionpool - Pipeline pipeline_20250526_022800_c5eecd - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2025-05-26 02:28:00 [DEBUG] urllib3.connectionpool - Pipeline pipeline_20250526_022800_c5eecd - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3ATCS-EQ&resolution=1&date_format=1&range_from=2025-04-14&range_to=2025-05-26&cont_flag=1 HTTP/1.1" 200 None
+2025-05-26 02:28:00 [DEBUG] FyersAPIRequest - Pipeline pipeline_20250526_022800_c5eecd - {'Status Code': 200, 'API': '/history'}
+2025-05-26 02:28:00 [DEBUG] trading.utils.pipeline_tracker - Pipeline pipeline_20250526_022800_c5eecd - Saved raw data for 2 symbols
+2025-05-26 02:28:00 [INFO] __main__ - Pipeline pipeline_20250526_022800_c5eecd - ✓ Fetched data for 2 symbols
+2025-05-26 02:28:00 [INFO] __main__ - Pipeline pipeline_20250526_022800_c5eecd - Step 2: Computing technical features...
+2025-05-26 02:28:00 [DEBUG] trading.utils.pipeline_tracker - Pipeline pipeline_20250526_022800_c5eecd - Saved features: open, high, low, close, volume, rsi, sma_fast, sma_slow
+2025-05-26 02:28:00 [INFO] __main__ - Pipeline pipeline_20250526_022800_c5eecd - ✓ Generated 8 features
+2025-05-26 02:28:00 [INFO] __main__ - Pipeline pipeline_20250526_022800_c5eecd - Step 3: Generating trading signals...
+2025-05-26 02:28:00 [INFO] __main__ - Pipeline pipeline_20250526_022800_c5eecd - ✓ Generated 0 trading signals
+2025-05-26 02:28:00 [INFO] __main__ - Pipeline pipeline_20250526_022800_c5eecd - Step 4: Executing trades...
+2025-05-26 02:28:00 [INFO] __main__ - Pipeline pipeline_20250526_022800_c5eecd - ✓ Trade execution complete
+2025-05-26 02:28:00 [INFO] trading.utils.pipeline_tracker - Pipeline pipeline_20250526_022800_c5eecd - Pipeline pipeline_20250526_022800_c5eecd completed
+2025-05-26 02:28:00 [INFO] apscheduler.executors.default - Pipeline pipeline_20250526_022800_c5eecd - Job "pipeline (trigger: cron[month='*', day='*', day_of_week='*', hour='*', minute='*'], next run at: 2025-05-26 02:29:00 IST)" executed successfully
+2025-05-26 02:28:11 [INFO] __main__ - Pipeline pipeline_20250526_022800_c5eecd - Shutting down...
+2025-05-26 02:28:11 [INFO] apscheduler.scheduler - Pipeline pipeline_20250526_022800_c5eecd - Scheduler has been shut down
+2025-05-26 02:28:11 [DEBUG] apscheduler.scheduler - Pipeline pipeline_20250526_022800_c5eecd - Looking for jobs to run
+2025-05-26 02:28:11 [DEBUG] apscheduler.scheduler - Pipeline pipeline_20250526_022800_c5eecd - No jobs; waiting until a job is added
+2025-05-26 02:28:11 [INFO] __main__ - Pipeline pipeline_20250526_022800_c5eecd - System stopped.

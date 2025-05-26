@@ -1,0 +1,21 @@
+2025-05-26 02:49:37 [INFO] __main__ - Pipeline pipeline_20250526_024937_e7f5b4 - Starting pipeline pipeline_20250526_024937_e7f5b4
+2025-05-26 02:49:37 [INFO] __main__ - Pipeline pipeline_20250526_024937_e7f5b4 - Step 1: Fetching market data...
+2025-05-26 02:49:37 [DEBUG] urllib3.connectionpool - Pipeline pipeline_20250526_024937_e7f5b4 - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2025-05-26 02:49:38 [DEBUG] urllib3.connectionpool - Pipeline pipeline_20250526_024937_e7f5b4 - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3ARELIANCE-EQ&resolution=1&date_format=1&range_from=2025-05-06&range_to=2025-05-26&cont_flag=1 HTTP/1.1" 200 None
+2025-05-26 02:49:38 [DEBUG] urllib3.connectionpool - Pipeline pipeline_20250526_024937_e7f5b4 - Starting new HTTPS connection (1): api-t1.fyers.in:443
+2025-05-26 02:49:38 [DEBUG] urllib3.connectionpool - Pipeline pipeline_20250526_024937_e7f5b4 - https://api-t1.fyers.in:443 "GET /data/history?symbol=NSE%3ATCS-EQ&resolution=1&date_format=1&range_from=2025-05-06&range_to=2025-05-26&cont_flag=1 HTTP/1.1" 200 None
+2025-05-26 02:49:38 [DEBUG] trading.utils.pipeline_tracker - Pipeline pipeline_20250526_024937_e7f5b4 - Saved raw data for 2 symbols
+2025-05-26 02:49:38 [INFO] __main__ - Pipeline pipeline_20250526_024937_e7f5b4 - ✓ Fetched data for 2 symbols
+2025-05-26 02:49:38 [INFO] __main__ - Pipeline pipeline_20250526_024937_e7f5b4 - Step 2: Computing technical features...
+2025-05-26 02:49:38 [DEBUG] trading.utils.pipeline_tracker - Pipeline pipeline_20250526_024937_e7f5b4 - Saved features: open, high, low, close, volume, rsi, sma_fast, sma_slow
+2025-05-26 02:49:38 [INFO] __main__ - Pipeline pipeline_20250526_024937_e7f5b4 - ✓ Generated 8 features
+2025-05-26 02:49:38 [INFO] __main__ - Pipeline pipeline_20250526_024937_e7f5b4 - Step 3: Generating trading signals...
+2025-05-26 02:49:38 [INFO] __main__ - Pipeline pipeline_20250526_024937_e7f5b4 - ✓ Generated 0 trading signals
+2025-05-26 02:49:38 [INFO] __main__ - Pipeline pipeline_20250526_024937_e7f5b4 - Step 4: Executing trades...
+2025-05-26 02:49:38 [INFO] __main__ - Pipeline pipeline_20250526_024937_e7f5b4 - ✓ Trade execution complete
+2025-05-26 02:49:38 [INFO] trading.utils.pipeline_tracker - Pipeline pipeline_20250526_024937_e7f5b4 - Pipeline pipeline_20250526_024937_e7f5b4 completed
+2025-05-26 02:49:40 [INFO] __main__ - Pipeline pipeline_20250526_024937_e7f5b4 - Shutting down...
+2025-05-26 02:49:40 [INFO] apscheduler.scheduler - Pipeline pipeline_20250526_024937_e7f5b4 - Scheduler has been shut down
+2025-05-26 02:49:40 [DEBUG] apscheduler.scheduler - Pipeline pipeline_20250526_024937_e7f5b4 - Looking for jobs to run
+2025-05-26 02:49:40 [DEBUG] apscheduler.scheduler - Pipeline pipeline_20250526_024937_e7f5b4 - No jobs; waiting until a job is added
+2025-05-26 02:49:40 [INFO] __main__ - Pipeline pipeline_20250526_024937_e7f5b4 - System stopped.

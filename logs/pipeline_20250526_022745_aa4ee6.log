@@ -1,0 +1,14 @@
+2025-05-26 02:27:45 [INFO] __main__ - Pipeline pipeline_20250526_022745_aa4ee6 - Trading system starting
+2025-05-26 02:27:45 [DEBUG] __main__ - Pipeline pipeline_20250526_022745_aa4ee6 - Loaded settings: {'symbols': ['NSE:RELIANCE-EQ', 'NSE:TCS-EQ'], 'lookback_hours': 1000, 'position_limit': 100, 'notional_cap': 100000, 'schedule': 'cron:* * * * *', 'broker': 'fyers'}
+2025-05-26 02:27:45 [INFO] __main__ - Pipeline pipeline_20250526_022745_aa4ee6 - Initializing scheduler...
+2025-05-26 02:27:45 [DEBUG] tzlocal - Pipeline pipeline_20250526_022745_aa4ee6 - /etc/localtime found
+2025-05-26 02:27:45 [DEBUG] tzlocal - Pipeline pipeline_20250526_022745_aa4ee6 - 1 found:
+ {'/etc/localtime is a symlink to': 'Asia/Kolkata'}
+2025-05-26 02:27:45 [INFO] apscheduler.scheduler - Pipeline pipeline_20250526_022745_aa4ee6 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-26 02:27:45 [INFO] apscheduler.scheduler - Pipeline pipeline_20250526_022745_aa4ee6 - Added job "pipeline" to job store "default"
+2025-05-26 02:27:45 [INFO] apscheduler.scheduler - Pipeline pipeline_20250526_022745_aa4ee6 - Scheduler started
+2025-05-26 02:27:45 [DEBUG] apscheduler.scheduler - Pipeline pipeline_20250526_022745_aa4ee6 - Looking for jobs to run
+2025-05-26 02:27:45 [INFO] __main__ - Pipeline pipeline_20250526_022745_aa4ee6 - Scheduler started with cron: '* * * * *'
+2025-05-26 02:27:45 [DEBUG] apscheduler.scheduler - Pipeline pipeline_20250526_022745_aa4ee6 - Next wakeup is due at 2025-05-26 02:28:00+05:30 (in 14.938491 seconds)
+2025-05-26 02:27:45 [INFO] __main__ - Pipeline pipeline_20250526_022745_aa4ee6 - System is running. Press Ctrl+C to exit.
+2025-05-26 02:27:45 [INFO] __main__ - Pipeline pipeline_20250526_022745_aa4ee6 - Running initial pipeline...

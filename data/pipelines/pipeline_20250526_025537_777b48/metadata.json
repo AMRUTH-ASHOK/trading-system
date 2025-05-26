@@ -1,0 +1,35 @@
+{
+  "pipeline_id": "pipeline_20250526_025537_777b48",
+  "timestamp": "2025-05-26T02:55:37.977181",
+  "status": "completed",
+  "raw_data": {
+    "file": "/Users/amruth.ashok/Desktop/Amruth/trading-system/data/pipelines/pipeline_20250526_025537_777b48/raw_data.csv",
+    "symbols": [
+      "NSE:RELIANCE-EQ",
+      "NSE:TCS-EQ"
+    ],
+    "start_time": "2025-05-06T03:45:00",
+    "end_time": "2025-05-23T09:59:00"
+  },
+  "features": {
+    "file": "/Users/amruth.ashok/Desktop/Amruth/trading-system/data/pipelines/pipeline_20250526_025537_777b48/features.csv",
+    "feature_columns": [
+      "open",
+      "high",
+      "low",
+      "close",
+      "volume",
+      "rsi",
+      "sma_fast",
+      "sma_slow"
+    ],
+    "symbols": [
+      "NSE:RELIANCE-EQ",
+      "NSE:TCS-EQ"
+    ],
+    "start_time": "2025-05-08T08:00:00",
+    "end_time": "2025-05-23T09:00:00"
+  },
+  "signals": [],
+  "trades": []
+}

@@ -1,0 +1,14 @@
+2025-05-26 02:55:37 [INFO] __main__ - Pipeline pipeline_20250526_025537_f2781e - Trading system starting
+2025-05-26 02:55:37 [DEBUG] __main__ - Pipeline pipeline_20250526_025537_f2781e - Loaded settings: {'symbols': ['NSE:RELIANCE-EQ', 'NSE:TCS-EQ'], 'lookback_hours': 480, 'position_limit': 100, 'notional_cap': 100000, 'schedule': 'cron:* * * * *', 'broker': 'fyers', 'sma_fast_period': 10, 'sma_slow_period': 20, 'rsi_period': 14, 'ml_confidence_buy_threshold': 0.55, 'ml_confidence_sell_threshold': 0.45, 'default_signal_confidence': 0.6, 'ui': {'chart_height': 600, 'candlestick_colors': {'increasing': '#26A69A', 'decreasing': '#EF5350'}, 'fonts': {'size': {'small': 1.0, 'medium': 1.1, 'large': 1.2, 'xlarge': 1.4, 'xxlarge': 1.8, 'xxxlarge': 2.0}, 'weights': {'normal': 500, 'semibold': 600, 'bold': 700, 'extrabold': 800}}, 'colors': {'primary': '#1976D2', 'secondary': '#E64A19', 'success': '#26A69A', 'error': '#EF5350', 'warning': '#FFA726', 'text': '#000000', 'background': '#FFFFFF', 'muted': '#E5E5E5'}, 'layout': {'sidebar_width': '20rem', 'container_padding': '1.5rem', 'border_radius': '8px', 'shadow': '0 2px 4px rgba(0,0,0,0.05)'}, 'log_display_height': 300, 'pipeline_id_hash_length': 8}}
+2025-05-26 02:55:37 [INFO] __main__ - Pipeline pipeline_20250526_025537_f2781e - Initializing scheduler...
+2025-05-26 02:55:37 [DEBUG] tzlocal - Pipeline pipeline_20250526_025537_f2781e - /etc/localtime found
+2025-05-26 02:55:37 [DEBUG] tzlocal - Pipeline pipeline_20250526_025537_f2781e - 1 found:
+ {'/etc/localtime is a symlink to': 'Asia/Kolkata'}
+2025-05-26 02:55:37 [INFO] apscheduler.scheduler - Pipeline pipeline_20250526_025537_f2781e - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-26 02:55:37 [INFO] apscheduler.scheduler - Pipeline pipeline_20250526_025537_f2781e - Added job "pipeline" to job store "default"
+2025-05-26 02:55:37 [INFO] apscheduler.scheduler - Pipeline pipeline_20250526_025537_f2781e - Scheduler started
+2025-05-26 02:55:37 [DEBUG] apscheduler.scheduler - Pipeline pipeline_20250526_025537_f2781e - Looking for jobs to run
+2025-05-26 02:55:37 [INFO] __main__ - Pipeline pipeline_20250526_025537_f2781e - Scheduler started with cron: '* * * * *'
+2025-05-26 02:55:37 [DEBUG] apscheduler.scheduler - Pipeline pipeline_20250526_025537_f2781e - Next wakeup is due at 2025-05-26 02:56:00+05:30 (in 22.023295 seconds)
+2025-05-26 02:55:37 [INFO] __main__ - Pipeline pipeline_20250526_025537_f2781e - System is running. Press Ctrl+C to exit.
+2025-05-26 02:55:37 [INFO] __main__ - Pipeline pipeline_20250526_025537_f2781e - Running initial pipeline...
